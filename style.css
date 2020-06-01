@@ -1,0 +1,48 @@
+body{
+  background-color: black;
+  font-family: 'Racing Sans One', cursive;
+}
+
+#blinkText {
+  font-size: 200px;
+}
+
+#blink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  font-family: 'Racing Sans One', cursive;
+  text-align: center;
+}
+
+@-webkit-keyframes blinker {
+    0% { color: red; 
+          text-shadow: red 0px 0px 20px;
+          font-size: 500%}
+    50% { color: blue;
+           text-shadow: blue 0px 0px 20px;
+            font-size: 500%;}
+    
+    100% { color: red;
+           text-shadow: red 0px 0px 20px;
+            font-size: 500%;}
+}
+
+h1 {
+   -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: woosher;
+     color: white;
+}
+
+@-webkit-keyframes  woosher {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  100% {
+    margin-left: 50%;
+    width: 100%;
+  }
+}
+
